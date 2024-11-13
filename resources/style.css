@@ -1,0 +1,194 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styl podstawowy */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Kontener */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nagłówek */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Przycisk nawigacji mobilnej */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+/* Główna treść */
+main {
+    padding: 40px 0;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* Stopka */
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #007BFF;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+}
