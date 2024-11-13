@@ -1,3 +1,8 @@
+/* Płynne przewijanie */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Resetowanie domyślnych stylów */
 * {
     margin: 0;
