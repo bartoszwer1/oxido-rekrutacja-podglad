@@ -82,7 +82,9 @@ nav {
 
 /* Główna treść */
 main {
-    padding: 40px 0;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
@@ -94,9 +96,9 @@ main p {
 }
 
 main img {
-    max-width: 100%;
+    max-width: 800px;
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 figure {
