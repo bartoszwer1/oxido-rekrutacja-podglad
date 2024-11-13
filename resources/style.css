@@ -107,7 +107,7 @@ figure {
 
 figure img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 figcaption {
@@ -133,6 +133,7 @@ footer {
 .footer-column {
     flex: 1;
     min-width: 200px;
+    max-width: 300px;
     margin-bottom: 20px;
 }
 
