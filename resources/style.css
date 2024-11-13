@@ -26,7 +26,8 @@ body {
 
 /* Nagłówek */
 header {
-    background-color: #fff;
+    background-color: rgba(248, 248, 248, 0.5);
+    backdrop-filter: blur(10px); /* Dodaje efekt rozmycia tła */
     border-bottom: 1px solid #eaeaea;
     position: sticky;
     top: 0;
@@ -98,6 +99,7 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 
 main p {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 main img {
